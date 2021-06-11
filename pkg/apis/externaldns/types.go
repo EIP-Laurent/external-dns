@@ -108,6 +108,11 @@ type Config struct {
 	DynCustomerName                   string
 	DynUsername                       string
 	DynPassword                       string `secure:"yes"`
+	EfficientIPHost                   string
+	EfficientIPPort                   int
+	EfficientIPUsername               string
+	EfficientIPPassword               string `secure:"yes"`
+	EfficientIPSSLVerify              bool
 	DynMinTTLSeconds                  int
 	OCIConfigFile                     string
 	InMemoryZones                     []string
